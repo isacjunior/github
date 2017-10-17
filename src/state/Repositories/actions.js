@@ -4,6 +4,6 @@ export const types = {
 }
 
 export const actions = {
-  createRepositories: (language, page) => ({ type: types.CREATE_REPOSITORIES, language, page }),
+  createRepositories: page => ({ type: types.CREATE_REPOSITORIES, page }),
   loadedRepositories: res => ({ type: types.LOADED_REPOSITORIES, res })
 }

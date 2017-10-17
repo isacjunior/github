@@ -12,7 +12,6 @@ class Repositories extends Component {
 
   componentWillMount() {
     this.props.createRepositories()
-    window.scrollTo(0, 300);
   }
 
   renderRepositories(repositorie) {
