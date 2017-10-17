@@ -2,14 +2,14 @@ import { createReducer } from 'core/utils/redux'
 import { types } from './actions'
 
 const initialState = {
-  repositories: [],
+  repositories: []
 }
 
 const reducer = {
   [types.LOADED_REPOSITORIES](state, { res }) {
     return {
       ...state,
-      repositories: res.items,
+      repositories: res.items
     }
   }
 }

@@ -11,7 +11,7 @@ const StyledImageProfile = styled.div`
       -moz-border-radius: 99em;
       border-radius: 99em;
       border: 3px solid #eee;
-      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
     }
 `
 

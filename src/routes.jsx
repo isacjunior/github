@@ -1,9 +1,9 @@
 import React from 'react'
-import { IndexRoute, Router, Route, browserHistory } from 'react-router'
+import { Router, Route, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 import { syncHistoryWithStore } from 'react-router-redux'
 import IntlProviderWrapper from './core/components/IntlProviderWrapper'
-import Main from './routes/repositories'
+import Main from './routes/main'
 import store from './store'
 
 const history = syncHistoryWithStore(browserHistory, store)

@@ -8,8 +8,13 @@ const Text = ({ children, bold }) => (
   </TextStyled>
 )
 
-Text.proptypes = {
-  children: PropTypes.node.isRequired
+Text.defaultProps = {
+  bold: false
+}
+
+Text.propTypes = {
+  children: PropTypes.node.isRequired,
+  bold: PropTypes.bool
 }
 
 export default Text

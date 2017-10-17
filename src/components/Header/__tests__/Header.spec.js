@@ -9,6 +9,6 @@ describe('Header', () => {
 
   it('Snapshot Header', () => {
     const wrapper = mount(<Header />)
-    expect(wrapper).toMatchSnapshot
+    expect(wrapper).toMatchSnapshot()
   })
 })

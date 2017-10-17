@@ -1,12 +1,11 @@
-import React, { Component, } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { actions } from 'state/Repositories/actions'
 import Text from '../../components/Text'
 import Icon from '../../components/Icon'
 import ImageProfile from '../../components/ImageProfile'
 import StyledRepositories from './styled'
-import githubProvider from 'core/providers/github'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-import { actions } from 'state/Repositories/actions'
 
 class Repositories extends Component {
 
@@ -14,22 +13,23 @@ class Repositories extends Component {
     this.props.createRepositories()
   }
 
-  renderRepositories(repositorie) {
+  renderRepositories(repositories) {
+    const { id, name, description, forks, stargazers_count, owner } = repositories
     return (
-      <StyledRepositories key={repositorie.id}>
+      <StyledRepositories key={id}>
         <div className="row">
           <div className="col-md-8">
-            <Text bold>{repositorie.name}</Text>
-            <p>{repositorie.description}</p>
+            <Text bold>{name}</Text>
+            <p>{description}</p>
             <div className="icons">
-              <span className="icons-detail"><Icon icon="fa-code-fork" />{repositorie.forks}</span>
-              <span className="icons-detail"><Icon icon="fa-star" />{repositorie.stargazers_count}</span>
+              <span className="icons-detail"><Icon icon="fa-code-fork" />{forks}</span>
+              <span className="icons-detail"><Icon icon="fa-star" />{stargazers_count}</span>
             </div>
           </div>
           <div className="col-md-4">
             <div className="text-center">
-              <ImageProfile url={repositorie.owner.avatar_url} />
-              <div className="username"><Text bold>{repositorie.owner.login}</Text></div>
+              <ImageProfile url={owner.avatar_url} />
+              <div className="username"><Text bold>{owner.login}</Text></div>
             </div>
           </div>
         </div>
@@ -48,7 +48,8 @@ class Repositories extends Component {
 }
 
 Repositories.propTypes = {
-  repositories: PropTypes.array
+  repositories: PropTypes.array.isRequired,
+  createRepositories: PropTypes.func.isRequired
 }
 
 const mapProps = ({ repositories }) => repositories.repositoriesReducer
