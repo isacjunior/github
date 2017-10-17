@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 const StyledImageProfile = styled.div`
   .user-profile {
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;

@@ -3,7 +3,7 @@ import { IndexRoute, Router, Route, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 import { syncHistoryWithStore } from 'react-router-redux'
 import IntlProviderWrapper from './core/components/IntlProviderWrapper'
-import Main from './container/Main'
+import Main from './routes/repositories'
 import store from './store'
 
 const history = syncHistoryWithStore(browserHistory, store)
@@ -15,7 +15,7 @@ const Routes = () => (
     <IntlProviderWrapper>
       <Router history={history}>
         <Route path={bashPath}>
-          <IndexRoute component={Main} />
+          { Main }
         </Route>
       </Router>
     </IntlProviderWrapper>
