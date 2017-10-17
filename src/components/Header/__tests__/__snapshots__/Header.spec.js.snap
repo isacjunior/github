@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshot Header 1`] = `
+<Hero>
+  <styled.div>
+    <div
+      className="sc-bdVaJa kAOJZq"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-12"
+          >
+            <div
+              className="icon"
+            >
+              <Icon
+                icon="fa-github"
+              >
+                <i
+                  className="fa fa-github"
+                />
+              </Icon>
+            </div>
+            <h1>
+              Github
+            </h1>
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-6"
+          >
+            <p>
+              Lorem Ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </styled.div>
+</Hero>
+`;

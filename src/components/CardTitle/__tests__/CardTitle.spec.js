@@ -4,11 +4,11 @@ import CardTitle from '../index'
 
 describe('CardTitle', () => {
   it('CardTitle render', () => {
-    mount(<CardTitle />)
+    mount(<CardTitle title="Title" />)
   })
 
   it('Snapshot CardTitle', () => {
-    const wrapper = mount(<CardTitle />)
-    expect(wrapper).toMatchSnapshot
+    const wrapper = mount(<CardTitle title="Title" />)
+    expect(wrapper).toMatchSnapshot()
   })
 })

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardTitle Snapshot CardTitle 1`] = `
+<CardTitle
+  title="Title"
+>
+  <styled.div>
+    <div
+      className="sc-bdVaJa kDsGQB"
+    >
+      <div>
+        <h2>
+          Title
+        </h2>
+        <div
+          className="line-under"
+        />
+      </div>
+    </div>
+  </styled.div>
+</CardTitle>
+`;

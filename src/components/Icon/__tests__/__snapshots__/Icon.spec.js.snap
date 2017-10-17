@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Snapshot Icon 1`] = `
+<Icon
+  icon="fa-fa"
+>
+  <i
+    className="fa fa-fa"
+  />
+</Icon>
+`;

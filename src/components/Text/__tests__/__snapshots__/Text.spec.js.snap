@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Snapshot Text 1`] = `
+<Text
+  bold={false}
+>
+  <styled.span
+    bold={false}
+  >
+    <span
+      className="sc-bdVaJa cPuCgi"
+    >
+      Children
+    </span>
+  </styled.span>
+</Text>
+`;
