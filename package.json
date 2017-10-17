@@ -41,7 +41,7 @@
     "file-loader": "0.9.0",
     "hapi": "^16.5.0",
     "html-webpack-plugin": "^2.28.0",
-    "jest": "^20.0.1",
+    "jest": "^20.0.4",
     "joi": "^10.2.2",
     "nightwatch": "^0.9.15",
     "node-sass": "^4.5.3",
@@ -104,6 +104,9 @@
       "<rootDir>/src/core/unit-test/setup.js"
     ],
     "testRegex": "/__tests__/.*.spec.js$",
+    "modulePaths": [
+      "src"
+    ],
     "moduleNameMapper": {
       "^.+\\.(css|scss|svg|png)$": "<rootDir>/src/core/unit-test/jest-stub.js",
       "^mocks(.*)$": "<rootDir>/stub"

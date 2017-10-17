@@ -4,7 +4,10 @@ import CardTitleStyled from './styled'
 
 const CardTitle = ({ title }) => (
   <CardTitleStyled>
-    <h2>{title}</h2>
+      <div>
+        <h2>{title}</h2>
+        <div className="line-under"></div>
+      </div>
   </CardTitleStyled>
 )
 
