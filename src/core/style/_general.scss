@@ -17,3 +17,12 @@ a:link {
 img {
   max-width: 100%;
 }
+
+.modal-backdrop {
+  background-color: rgba(85, 98, 113, 0.1);
+}
+
+.modal-content {
+  box-shadow: none;
+  border: none;
+}
