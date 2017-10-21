@@ -44,7 +44,7 @@ class Repositories extends Component {
         />
         <div className="row">
           <div className="col-md-8">
-            <Text bold>
+            <Text bold cursor="pointer">
               <a onClick={() => this.click(owner.login, name)}>{name}</a>
             </Text>
             <p>{description}</p>
